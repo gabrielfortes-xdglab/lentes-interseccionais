@@ -33,7 +33,8 @@ html,body{height:100%;background:#1c130d;overflow:hidden;font-family:var(--sans)
 .dark .footer{color:#b9a58f}
 h1{font:600 58px/1.14 var(--serif);letter-spacing:-.005em}
 h2{font:500 38px/1.22 var(--serif);max-width:1380px}
-h1 em,h2 em{font-style:normal;color:inherit}
+h1 em,h2 em,.lead em,ol em{font-style:normal;font-weight:600;color:var(--orange-deep)}
+.dark h1 em{color:var(--orange-soft)}
 .slide:has(.pbody) h2{font-size:33px;line-height:1.24}
 p.lead{font:400 23px/1.5 var(--sans);color:var(--ink-soft);max-width:1150px;margin-top:20px}
 .dark p.lead{color:#e8dccb}
@@ -41,7 +42,7 @@ p.lead{font:400 23px/1.5 var(--sans);color:var(--ink-soft);max-width:1150px;marg
 .dark .src{color:#b9a58f}
 .body{flex:1;display:flex;gap:56px;margin-top:36px;min-height:0;align-items:flex-start}
 .col{flex:1;min-width:0}
-.big{font:600 132px/1 var(--serif);color:var(--ink);letter-spacing:-.02em}
+.big{font:600 132px/1 var(--serif);color:var(--orange-deep);letter-spacing:-.02em}
 .card{border-top:2px solid var(--brown);padding:16px 0 0}
 .card h3{font:600 25px/1.2 var(--serif);margin-bottom:10px}
 .card p{font:400 19px/1.5 var(--sans);color:var(--ink-soft)}
@@ -75,15 +76,18 @@ svg text{font-family:var(--sans)}
 .screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:0;transition:opacity .4s ease}
 .screen img.on{opacity:1}
 .fcap{display:flex;gap:14px;align-items:baseline;margin-top:12px;min-height:50px}
-.fcap .k{font:600 14px/1.3 var(--sans);color:var(--ink-faint);white-space:nowrap}
+.fcap .k{font:600 14px/1.3 var(--sans);color:var(--orange-deep);white-space:nowrap}
 .fcap p{font:400 17px/1.4 var(--sans);color:var(--ink-soft)}
 .pdots{display:flex;gap:6px;margin-top:4px}
 .pdots i{width:24px;height:3px;background:var(--rule);cursor:pointer}
-.pdots i.on{background:var(--ink)}
+.pdots i.on{background:var(--orange-deep)}
 aside.read{flex:1;min-width:0;display:flex;flex-direction:column}
 .blk{border-top:1px solid var(--rule);padding:11px 0 13px}
 .blk:first-child{border-top:2px solid var(--brown)}
 .blk .lbl{font:600 15px/1.2 var(--sans);color:var(--ink);margin-bottom:5px}
+.blk.mec .lbl{color:var(--brown)}
+.blk.evi .lbl{color:var(--orange-deep)}
+.blk.cui .lbl{color:#6B2D2D}
 .blk p{font:400 16px/1.45 var(--sans);color:var(--ink-soft)}
 .blk .ref{display:block;margin-top:5px;font:400 13.5px/1.35 var(--sans);color:var(--ink-faint)}
 a.open{font:500 14px var(--sans);color:var(--brown);text-decoration:none;border-bottom:1px solid var(--rule);align-self:flex-start;margin-top:6px}
@@ -107,7 +111,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 1 · CAPA -->
 <section class="slide dark" data-n="1">
   <div class="eyebrow">SBP 2026 · Belém/PA · Observatório de Equidade Educacional</div>
-  <h1 style="max-width:1300px;margin-top:24px">Lentes interseccionais para dados educacionais públicos: análise de dados para promover equidade no campo psicoeducacional</h1>
+  <h1 style="max-width:1300px;margin-top:24px">Lentes interseccionais para dados educacionais públicos: <em>análise de dados para promover equidade</em> no campo psicoeducacional</h1>
   <p class="lead" style="margin-top:30px;font-size:26px">Alternativas narrativas e sua fundamentação em estudos cognitivos e de interpretação</p>
   <p class="lead" style="margin-top:14px;font-size:21px">Gabriel Fortes (UFAL) · Líder de Inovação e Pesquisa do Observatório de Equidade Educacional</p>
   <p class="lead" style="margin-top:4px;font-size:21px">Angelina Nunes de Vasconcelos (UFAL) · Coordenadora do projeto</p>
@@ -125,7 +129,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
       <p class="lead" style="margin-top:10px">dos estudantes do 5º ano das escolas públicas têm aprendizagem adequada em Língua Portuguesa.</p>
     </div>
     <div class="col">
-      <h2 style="font-size:42px">A média nacional é o indicador que circula no debate público, mas não informa como o resultado se distribui entre grupos</h2>
+      <h2 style="font-size:42px">A média nacional é o indicador que circula no debate público, mas <em>não informa como o resultado se distribui entre grupos</em></h2>
       <p class="lead">Examinamos como a forma de mostrar e de narrar esse dado altera o que gestores, docentes e pesquisadores inferem, a quem atribuem a desigualdade e que decisões consideram.</p>
     </div>
   </div>
@@ -147,7 +151,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 4 · CORPUS -->
 <section class="slide center" data-n="4">
   <div class="eyebrow">2 · Corpus e procedimento de análise</div>
-  <h2>Sete peças do Observatório, ordenadas da narrativa conduzida pelo autor à exploração conduzida pelo leitor</h2>
+  <h2>Sete peças do Observatório, ordenadas da <em>narrativa conduzida pelo autor</em> à <em>exploração conduzida pelo leitor</em></h2>
   <svg width="1380" height="44" style="margin-top:30px"><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5A3825"/></marker></defs>
     <line x1="0" y1="30" x2="1370" y2="30" stroke="#5A3825" stroke-width="2" marker-end="url(#ar)"/>
     <text x="0" y="16" font-size="14" font-weight="500" fill="#5A3825">Conduzido pelo autor</text>
@@ -173,7 +177,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 5 · MÉDIO -->
 <section class="slide piece" data-n="5" data-steps="5">
   <div class="eyebrow">3.1 · Personificar a média</div>
-  <h2>Gráficos de médias sem dispersão favorecem explicações individuais da desigualdade; a peça termina mostrando a distribuição</h2>
+  <h2>Gráficos de médias sem dispersão favorecem <em>explicações individuais</em> da desigualdade; a peça termina mostrando a distribuição</h2>
   <div class="pbody">
     <div class="frame"><div class="screen">
       <img src="img/medio_00.jpg" data-cap="Abertura: o personagem Médio corresponde à média nacional de 257 pontos (SAEB 2023, 9º ano, Matemática; população estimada de 2,08 milhões).">
@@ -215,7 +219,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 7 · TRAVESSIAS -->
 <section class="slide piece" data-n="7" data-steps="4">
   <div class="eyebrow">3.3 · Biografia comparada</div>
-  <h2>Casos individuais engajam, mas tendem a individualizar a responsabilidade; cada marca biográfica da peça se apoia em dado populacional</h2>
+  <h2>Casos individuais engajam, mas tendem a <em>individualizar a responsabilidade</em>; cada marca biográfica da peça se apoia em dado populacional</h2>
   <div class="pbody">
     <div class="frame"><div class="screen">
       <img src="img/trav_abertura.jpg" data-cap="Abertura: Helena (branca, Campinas/SP) e Davi (negro, Petrolina/PE), personagens compostos a partir de dados agregados.">
@@ -235,7 +239,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 8 · ISSO É UMA ESCOLA? -->
 <section class="slide piece" data-n="8" data-steps="4">
   <div class="eyebrow">3.4 · Construção incremental sobre um esquema familiar</div>
-  <h2>Segmentar a informação sobre um esquema conhecido favorece a compreensão; a peça verifica a Lei 15.360/2026 item a item na Amazônia Legal</h2>
+  <h2>Segmentar a informação sobre um <em>esquema conhecido</em> favorece a compreensão; a peça verifica a Lei 15.360/2026 item a item na Amazônia Legal</h2>
   <div class="pbody">
     <div class="frame"><div class="screen">
       <img src="img/esc_sonho.jpg" data-cap="Prólogo: o desenho infantil de escola como esquema compartilhado de partida.">
@@ -255,7 +259,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 9 · CONTRAFACTUAL -->
 <section class="slide piece" data-n="9" data-steps="2">
   <div class="eyebrow">3.5 · Cenário contrafactual “E se…?”</div>
-  <h2>Leitores inferem causalidade a partir de correlações; o cenário da Lei de Cotas (28,1% em 2012, 51,8% em 2024) declara o tipo de evidência</h2>
+  <h2>Leitores <em>inferem causalidade</em> a partir de correlações; o cenário da Lei de Cotas (28,1% em 2012, 51,8% em 2024) declara o tipo de evidência</h2>
   <div class="pbody">
     <div class="frame"><div class="screen">
       <img src="img/ins_cf_real.jpg" data-cap="Cenário observado (2024): 51,8% dos ingressantes nas IES federais se autodeclaram pretos ou pardos.">
@@ -273,7 +277,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 10 · TEM, MAS -->
 <section class="slide piece" data-n="10" data-steps="4">
   <div class="eyebrow">3.6 · Número com voz</div>
-  <h2>A fala da gestão qualifica o registro binário do Censo Escolar, com o número nacional mantido à vista como taxa de base</h2>
+  <h2>A fala da gestão <em>qualifica o registro binário</em> do Censo Escolar, com o número nacional mantido à vista como taxa de base</h2>
   <div class="pbody">
     <div class="frame"><div class="screen">
       <img src="img/l10_abertura.jpg" data-cap="Percurso por uma escola-arquétipo, conduzido pelo relato verbatim de uma vice-diretora (anonimizada).">
@@ -293,7 +297,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 11 · NOMEAR -->
 <section class="slide piece" data-n="11" data-steps="4">
   <div class="eyebrow">3.7 · Nomear o agente</div>
-  <h2>Metáforas e forma gramatical podem deslocar a atribuição de responsabilidade; a peça nomeia agentes institucionais com documentação histórica</h2>
+  <h2>Metáforas e forma gramatical podem <em>deslocar a atribuição de responsabilidade</em>; a peça nomeia agentes institucionais com documentação histórica</h2>
   <div class="pbody">
     <div class="frame"><div class="screen">
       <img src="img/nao_selva.jpg" data-cap="Ato 2: metáforas naturalizantes presentes no corpus (“câncer”, “furacão”, “selva”), nas quais o agente causal não é nomeado.">
@@ -332,7 +336,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 13 · SILÊNCIOS -->
 <section class="slide center" data-n="13">
   <div class="eyebrow">4 · Ausências nos dados</div>
-  <h2>Leitores tendem a desconsiderar a informação ausente; o painel registra as lacunas das bases numa nota epistêmica</h2>
+  <h2>Leitores tendem a <em>desconsiderar a informação ausente</em>; o painel registra as lacunas das bases numa nota epistêmica</h2>
   <div class="pbody" style="gap:44px">
     <div class="frame" style="width:720px"><div class="screen" style="width:720px;height:450px;cursor:default"><img class="on" src="img/ins_quali.jpg" alt=""></div>
       <div class="fcap"><p>Nota epistêmica do painel. Silêncios sistemáticos: deficiência sem cruzamento com raça e renda; indígenas urbanos como categoria residual; sem microdado de aluno do Censo Escolar desde 2022; Norte e interior do Nordeste sub-representados na pesquisa qualitativa.</p></div></div>
@@ -347,7 +351,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
 <!-- 14 · SÍNTESE -->
 <section class="slide center" data-n="14">
   <div class="eyebrow">5 · Discussão</div>
-  <h2>Síntese: mecanismo, evidência e cuidado previsto para cada alternativa</h2>
+  <h2>Síntese: <em>mecanismo, evidência e cuidado previsto</em> para cada alternativa</h2>
   <table class="syn">
     <tr><th>Alternativa</th><th>Mecanismo</th><th>Evidência-chave</th><th>Cuidado previsto</th></tr>
     <tr><td>Personificar a média</td><td>média lida como membro típico</td><td>sem dispersão, mais explicações estereotipadas <span class="r">(Holder &amp; Xiong)</span></td><td>mostrar a distribuição</td></tr>
@@ -359,7 +363,7 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
     <tr><td>Nomear o agente</td><td>metáfora e agentividade</td><td>culpa e soluções se deslocam <span class="r">(Fausey; Thibodeau)</span></td><td>efeito modesto; agente documentado</td></tr>
     <tr><td>Exploração aberta</td><td>busca e construção de sentido</td><td>&gt;60% de insights falsos <span class="r">(Zgraggen et al.)</span></td><td>perguntas, n e incerteza visíveis</td></tr>
   </table>
-  <p class="lead" style="font-size:19px;margin-top:18px;max-width:1380px">Os efeitos de storytelling sobre atitudes e memória tendem a ser menores do que se costuma supor (Liem, Perin &amp; Wood, 2020; Zdanovic et al., 2022). Propomos avaliar as peças pela compreensão e pela atribuição de responsabilidade que produzem, além do engajamento.</p>
+  <p class="lead" style="font-size:19px;margin-top:18px;max-width:1380px">Os efeitos de storytelling sobre atitudes e memória tendem a ser menores do que se costuma supor (Liem, Perin &amp; Wood, 2020; Zdanovic et al., 2022). Propomos avaliar as peças pela <em>compreensão</em> e pela <em>atribuição de responsabilidade</em> que produzem, além do engajamento.</p>
 </section>
 
 <!-- 15 · CONCLUSÃO -->
@@ -367,9 +371,9 @@ table.syn td .r{color:var(--ink-faint);font-size:14px}
   <div class="eyebrow">6 · Conclusões</div>
   <h2>Conclusões e agenda</h2>
   <ol class="concl">
-    <li>Escolhas de narração e de codificação visual afetam o que o leitor observa, a quem atribui a desigualdade e que ações considera possíveis.</li>
+    <li>Escolhas de narração e de codificação visual afetam o que o leitor observa, <em>a quem atribui a desigualdade</em> e que ações considera possíveis.</li>
     <li>Cada alternativa tem riscos descritos na literatura (dispersão oculta, enquadramento episódico, inferência causal indevida, comparações múltiplas), que o desenho das peças precisa antecipar.</li>
-    <li>A média nacional, sozinha, oferece pouca informação para orientar políticas voltadas aos grupos que concentram a desigualdade; a desagregação interseccional deveria acompanhar a divulgação dos indicadores.</li>
+    <li>A média nacional, sozinha, oferece pouca informação para orientar políticas voltadas aos grupos que concentram a desigualdade; a <em>desagregação interseccional</em> deveria acompanhar a divulgação dos indicadores.</li>
     <li>Agenda: testar com gestores e docentes se as peças alteram a compreensão e a atribuição de responsabilidade.</li>
   </ol>
   <p class="lead" style="position:absolute;bottom:56px;left:110px;font-size:20px;line-height:1.5">Gabriel Fortes (UFAL) · Líder de Inovação e Pesquisa do Observatório de Equidade Educacional<br>Angelina Nunes de Vasconcelos (UFAL) · Coordenadora do projeto</p>
@@ -430,10 +434,10 @@ document.querySelectorAll('.slide.piece').forEach(s=>{
 
 /* ---------- 6 · drill-down ---------- */
 (function(){const steps=[
-  {t:'Média nacional: 40,5% dos estudantes com aprendizagem adequada em LP',b:[['Todos os estudantes',40.5,'n']]},
-  {t:'Por raça/cor: 46,9% entre brancos e amarelos e 37,5% entre pretos e pardos',b:[['Brancos e amarelos',46.9,'b'],['Pretos e pardos',37.5,'p']]},
-  {t:'Por raça/cor e sexo: de 34,4% a 50,0%',b:[['Meninas brancas',50.0,'b'],['Meninos brancos',43.9,'b'],['Meninas pretas/pardas',40.6,'p'],['Meninos pretos/pardos',34.4,'p']]},
-  {t:'Por raça/cor, sexo e nível socioeconômico: de 23,7% a 63,6%',b:[['Meninas brancas · NSE alto',63.6,'b'],['Meninos brancos · NSE alto',55.8,'b'],['Meninas pretas · NSE alto',53.2,'p'],['Meninos pretos · NSE alto',44.2,'p'],['Meninas brancas · NSE baixo',30.6,'b'],['Meninas pretas · NSE baixo',29.4,'p'],['Meninos brancos · NSE baixo',25.4,'b'],['Meninos pretos · NSE baixo',23.7,'p']]}];
+  {t:'Média nacional: <em>40,5%</em> dos estudantes com aprendizagem adequada em LP',b:[['Todos os estudantes',40.5,'n']]},
+  {t:'Por raça/cor: <em>46,9%</em> entre brancos e amarelos e <em>37,5%</em> entre pretos e pardos',b:[['Brancos e amarelos',46.9,'b'],['Pretos e pardos',37.5,'p']]},
+  {t:'Por raça/cor e sexo: de <em>34,4%</em> a <em>50,0%</em>',b:[['Meninas brancas',50.0,'b'],['Meninos brancos',43.9,'b'],['Meninas pretas/pardas',40.6,'p'],['Meninos pretos/pardos',34.4,'p']]},
+  {t:'Por raça/cor, sexo e nível socioeconômico: de <em>23,7%</em> a <em>63,6%</em>',b:[['Meninas brancas · NSE alto',63.6,'b'],['Meninos brancos · NSE alto',55.8,'b'],['Meninas pretas · NSE alto',53.2,'p'],['Meninos pretos · NSE alto',44.2,'p'],['Meninas brancas · NSE baixo',30.6,'b'],['Meninas pretas · NSE baixo',29.4,'p'],['Meninos brancos · NSE baixo',25.4,'b'],['Meninos pretos · NSE baixo',23.7,'p']]}];
   const s=document.getElementById('dd'),btns=document.getElementById('dd-btns'),ttl=document.getElementById('dd-title');
   ['Média','+ Raça','+ Sexo','+ NSE'].forEach((l,i)=>{const b=document.createElement('button');b.className='btn';b.textContent=l;b.onclick=()=>{step=i;draw(i)};btns.appendChild(b)});
   const W=900,H=520,L=255,xmax=70,sx=v=>L+(v/xmax)*(W-L-70);
@@ -468,7 +472,7 @@ document.querySelectorAll('.slide.piece').forEach(s=>{
     el('text',{x:W,y:sy(avg)-7,'text-anchor':'end','font-size':14,'font-weight':600,fill:C.ink},s,'média do grupo '+fmt(avg)+'%');
     const pa=d.PA,mx=rows[0],mn=rows[rows.length-1];
     const extra=mn[0]==='PA'?'':`; Pará: ${fmt(pa)}%`;
-    document.getElementById('uf-title').innerHTML=`${layers[k][1]}: de ${fmt(mn[1])}% (${mn[0]}) a ${fmt(mx[1])}% (${mx[0]})${extra}`}
+    document.getElementById('uf-title').innerHTML=`${layers[k][1]}: de <em>${fmt(mn[1])}%</em> (${mn[0]}) a <em>${fmt(mx[1])}%</em> (${mx[0]})${extra}`}
   draw(0);})();
 
 {const h=location.hash.slice(1).split('.');go(Math.max(0,(parseInt(h[0])||1)-1),parseInt(h[1])||0);}
